@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Neucha|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/yrpg.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/JavaScript">
+       function showMessage(){
+           var message = document.getElementById("attribute1").value;
+           var message2 = document.getElementById("attribute2").value;
+           var message3 = document.getElementById("attribute3").value;
+           var message4 = document.getElementById("attribute4").value;
+           var message5 = document.getElementById("attribute5").value;
+           var message6 = document.getElementById("attribute6").value;
+           if (message !== ""){
+             for (i = 0; i < 2; i++) {
+             var x = document.getElementsByClassName("display_message");
+                 x[i].innerHTML= message;}}
+           if (message2 !== ""){
+            for (i = 0; i < 2; i++) {
+            var x = document.getElementsByClassName("display_message2");
+                x[i].innerHTML= message2;}}
+           if (message3 !== ""){
+             for (i = 0; i < 2; i++) {
+             var x = document.getElementsByClassName("display_message3");
+                 x[i].innerHTML= message3;}}
+           if (message4 !== ""){
+             for (i = 0; i < 2; i++) {
+             var x = document.getElementsByClassName("display_message4");
+                 x[i].innerHTML= message4;}}
+           if (message5 !== ""){
+             for (i = 0; i < 2; i++) {
+             var x = document.getElementsByClassName("display_message5");
+                 x[i].innerHTML= message5;}}
+           if (message6 !== ""){
+             for (i = 0; i < 2; i++) {
+             var x = document.getElementsByClassName("display_message6");
+                 x[i].innerHTML= message6;}}
+           return false;
+       }
+   </script>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <header><!--HEADER-->
+    <h1>YRPG Stat Sheet</h1>
+  </header>
+  <section id="container">
+    <h2> Input Attributes </h2> <!--INPUT-ATTRIBUTES-->
+    <section id="attribute1Form">
+        <form> Attribute 1: <input type="text" name="attribute1" id="attribute1">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 2: <input type="text" name="attribute2" id="attribute2">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 3: <input type="text" name="attribute3" id="attribute3">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 4: <input type="text" name="attribute4" id="attribute4">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 5: <input type="text" name="attribute5" id="attribute5">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 6: <input type="text" name="attribute6" id="attribute6">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <h2> Current Attributes </h2> <!--------------------------------CURRENT ATTRIBUTES------------->
+    <section id = "displayStats">
+    <table>
+    <tr>
+      <td id="selector1"><span class = "display_message">Attribute 1</span></td>
+      <td id="selector2"><span class = "display_message2">Attribute 2</span></td>
+      <td id="selector3"><span class = "display_message3">Attribute 3</span></td>
+    </tr>
+    <tr>
+      <td id="selector4"><span class = "display_message4">Attribute 4</span></td>
+      <td id="selector5"><span class = "display_message5">Attribute 5</span></td>
+      <td id="selector6"><span class = "display_message6">Attribute 6</span></td>
+    </tr>
+  </table>
+    </section>
+  <h2>My Character's Stats</h2>
+    <section id="characterStats">
+      <table>
+        <tr>
+          <th>Attribute Name</th>
+          <th>Attribute Level</th>
+        </tr>
+        <tr>
+          <td id="selector1"><span class = "display_message">Attribute 1</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector2"><span class = "display_message2">Attribute 2</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector3"><span class = "display_message3">Attribute 3</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector4"><span class = "display_message4">Attribute 4</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector5"><span class = "display_message5">Attribute 5</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector6"><span class = "display_message6">Attribute 6</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+      </table>
+      <h3>Inventory</h3>
+      <textarea rows="9" cols="40"> </textarea>
+    </section>
+  </section>
+<footer>
+  <p>This Site was made by Mark Prince</p>
+  <p>The "YRPG" game was made by Mark's friend Yomic</p>
+</footer>
+</body>
