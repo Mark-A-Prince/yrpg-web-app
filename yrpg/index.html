@@ -6,12 +6,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/JavaScript">
        function showMessage(){
-           var message = document.getElementById("attribute1").value;
-           var message2 = document.getElementById("attribute2").value;
-           var message3 = document.getElementById("attribute3").value;
-           var message4 = document.getElementById("attribute4").value;
-           var message5 = document.getElementById("attribute5").value;
-           var message6 = document.getElementById("attribute6").value;
+         for(k = 1; k < 7; k++){
+           var message = document.getElementById("attribute" + k).value;}
+         
            if (message !== ""){
              for (i = 0; i < 2; i++) {
              var x = document.getElementsByClassName("display_message");
