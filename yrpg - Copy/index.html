@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Neucha|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/yrpg.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/JavaScript">
+       function showMessage(){
+           var attributes = { //Make Attributes Array
+             0 : document.getElementById("attribute1").value,
+             1 : document.getElementById("attribute2").value,
+             2 : document.getElementById("attribute3").value,
+             3 : document.getElementById("attribute4").value,
+             4 : document.getElementById("attribute5").value,
+             5 : document.getElementById("attribute6").value
+           }
+           //Go through all values of Array
+           for(k = 0; k < 6; k++){
+             if (attributes[k] !== ""){ //if value is not blank
+               for (i = 0; i < 2; i++) { //for all instances of specific class because classes are treated like arrays
+               var x = document.getElementsByClassName("display_message" + (k + 1)); //find right class
+                   x[i].innerHTML= attributes[k];}} //set value of span equal to value in attributes array
+           }
+           return false; //do not reload web page
+       }
+   </script>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <header><!--HEADER-->
+    <h1>YRPG Stat Sheet</h1>
+  </header>
+  <section id="container">
+    <h2> Input Attributes </h2> <!--INPUT-ATTRIBUTES-->
+    <section id="attribute1Form">
+        <form> Attribute 1: <input type="text" name="attribute1" id="attribute1">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 2: <input type="text" name="attribute2" id="attribute2">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 3: <input type="text" name="attribute3" id="attribute3">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 4: <input type="text" name="attribute4" id="attribute4">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 5: <input type="text" name="attribute5" id="attribute5">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <section id="attribute1Form">
+        <form> Attribute 6: <input type="text" name="attribute6" id="attribute6">
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+        </form>
+    </section>
+    <h2> Current Attributes </h2> <!--------------------------------CURRENT ATTRIBUTES------------->
+    <section id = "displayStats">
+    <table>
+    <tr>
+      <td id="selector1"><span class = "display_message1">Attribute 1</span></td>
+      <td id="selector2"><span class = "display_message2">Attribute 2</span></td>
+      <td id="selector3"><span class = "display_message3">Attribute 3</span></td>
+    </tr>
+    <tr>
+      <td id="selector4"><span class = "display_message4">Attribute 4</span></td>
+      <td id="selector5"><span class = "display_message5">Attribute 5</span></td>
+      <td id="selector6"><span class = "display_message6">Attribute 6</span></td>
+    </tr>
+  </table>
+    </section>
+  <h2>My Character's Stats</h2>
+    <section id="characterStats">
+      <table>
+        <tr>
+          <th>Attribute Name</th>
+          <th>Attribute Level</th>
+        </tr>
+        <tr>
+          <td id="selector1"><span class = "display_message1">Attribute 1</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector2"><span class = "display_message2">Attribute 2</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector3"><span class = "display_message3">Attribute 3</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector4"><span class = "display_message4">Attribute 4</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector5"><span class = "display_message5">Attribute 5</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+        <tr>
+          <td id="selector6"><span class = "display_message6">Attribute 6</span></td>
+          <td><input type="number" name="quantity" min="0" max="18" value="3"></td>
+        </tr>
+      </table>
+      <h3>Inventory</h3>
+      <textarea rows="9" cols="40"> </textarea>
+    </section>
+  </section>
+<footer>
+  <p>This Site was made by Mark Prince</p>
+  <p>The "YRPG" game was made by Mark's friend Yomic</p>
+</footer>
+</body>
