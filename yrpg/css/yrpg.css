@@ -6,14 +6,14 @@ header{background-color: #d1d1d1;
        padding: 10px;
        font-family: 'Ubuntu', serif;
        text-align: center;
-       box-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+       box-shadow: 0px 3px 5px rgba(0,0,0,0.3);}
 
 section{margin-bottom: 10px;}
 
 h2{color: white;
    background: black;
    padding: 15px;
-   box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+   box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
    max-width: 400px;
  /*border-right: thick solid #ff9900;*/}
 
@@ -25,7 +25,7 @@ form{background: #ff9900;
      border-style: solid;
      border-color: #d1d1d1;
      padding: 20px;
-     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+     box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
      margin-top: 10px;
      font-size: 120%;}
 
@@ -40,7 +40,7 @@ button{padding: 10px;}
                                border-style: solid;
                                border-color: #d1d1d1;
                                padding: 20px;
-                               box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+                               box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
                                margin-top: 10px;}
 
 #displayStats, #characterStats table{text-align: center;}
