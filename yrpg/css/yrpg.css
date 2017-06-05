@@ -21,7 +21,7 @@ h2{color: white;
            max-width: 800px;}
 
 form{background: #ff9900;
-     border-width: 2px;
+     border-width: 0px;
      border-style: solid;
      border-color: #d1d1d1;
      padding: 20px;
@@ -36,7 +36,7 @@ button{padding: 10px;}
 
 #displayStats, #characterStats{color: white;
                                background-color: #8c8273;
-                               border-width: 2px;
+                               border-width: 0px;
                                border-style: solid;
                                border-color: #d1d1d1;
                                padding: 20px;
