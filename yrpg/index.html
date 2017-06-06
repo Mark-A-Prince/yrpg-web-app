@@ -19,9 +19,10 @@
              if (attributes[k] !== ""){ //if value is not blank
                for (i = 0; i < 2; i++) { //for all instances of specific class because classes are treated like arrays
                var x = document.getElementsByClassName("display_message" + (k + 1)); //find right class
-                   x[i].innerHTML= attributes[k];}} //set value of span equal to value in attributes array
-             return false; //do not reload web page
-           }
+                   x[i].innerHTML= attributes[k];
+                   return false; //do not reload web page
+               }} //set value of span equal to value in attributes array
+             }
            
        }
    </script>
