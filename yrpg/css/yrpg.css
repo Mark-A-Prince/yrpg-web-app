@@ -33,7 +33,7 @@ form{background: #ff9900;
 form:hover {background-color: #ffa31a;}
 
 input{padding: 10px;}
-input[type="text"]{width: 25vw;}
+input[type="text"]{width: 30%;}
 
 button{padding: 10px;
        color: white;
