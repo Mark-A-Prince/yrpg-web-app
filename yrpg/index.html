@@ -20,8 +20,9 @@
                for (i = 0; i < 2; i++) { //for all instances of specific class because classes are treated like arrays
                var x = document.getElementsByClassName("display_message" + (k + 1)); //find right class
                    x[i].innerHTML= attributes[k];}} //set value of span equal to value in attributes array
+             return false; //do not reload web page
            }
-           return false; //do not reload web page
+           
        }
    </script>
 
