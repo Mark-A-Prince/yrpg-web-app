@@ -24,10 +24,10 @@
              return false; //do not reload web page
        }
    </script>
-   <script>
+   <script> //This script was found here: https://www.cs.tut.fi/~jkorpela/forms/enter.html, thank you Jukka!
     function noenter() {
     return !(window.event && window.event.keyCode == 13); }
-</script>
+   </script>
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
@@ -38,7 +38,7 @@
     <h2> Input Attributes </h2> <!--INPUT-ATTRIBUTES-->
     <section id="attribute1Form">
         <form> Attribute 1: <input type="text" name="attribute1" id="attribute1" onkeypress="return noenter()">
-          <button type="button" onclick="showMessage()" value="submit" /> Apply </button>
+          <button type="button" onclick="showMessage()" value="submit" /> Apply </button> 
         </form>
     </section>
     <section id="attribute1Form">
